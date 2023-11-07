@@ -64,7 +64,7 @@ button{
     font-family: 'Open Sans', sans-serif;
     color: hsl(257, 40%, 49%);
     cursor: pointer;
-    transition: 1s;
+    transition: all .4s ease-in;
 }
 button:hover{
     background-color: hsl(300, 69%, 71%);
@@ -75,7 +75,6 @@ footer{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-
 }
 footer div i{
     position: relative;
