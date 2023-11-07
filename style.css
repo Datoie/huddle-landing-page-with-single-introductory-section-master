@@ -23,8 +23,6 @@ main{
     z-index: 2;
 }
 /* header */
-header{
-}
 .mian-logo{
     position: relative;
     right: 10px;
@@ -66,6 +64,7 @@ button{
     font-family: 'Open Sans', sans-serif;
     color: hsl(257, 40%, 49%);
     cursor: pointer;
+    transition: 1s;
 }
 button:hover{
     background-color: hsl(300, 69%, 71%);
@@ -78,12 +77,30 @@ footer{
     justify-content: flex-end;
 
 }
-i {
-    margin-right: 10px;
+footer div i{
+    position: relative;
+    margin-left: 50px;
+    font-size: 20px;
+}
+.fa-facebook-f{
+    margin-left: 0;
+}
+i::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
     align-items: center;
-    border: 1px solid hsl(0, 0%, 100%);
+    border: 2px solid hsl(0, 0%, 100%);
     border-radius: 50%;
-    padding: 10px;
+    left: -14px;
+    bottom: -11px;
+}
+i:hover::before{
+    color: hsl(300, 69%, 71%);
+}
+i:hover::after{
+    border:2px solid hsl(300, 69%, 71%);
 }
 @media (max-width:1200px) {
     .bg-img{
